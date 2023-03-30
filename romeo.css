@@ -1,0 +1,35 @@
+body {
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+}
+
+.box {
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 3px solid #333;
+    box-shadow: 5px 5px 0px #333;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box:before {
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    transform: skew(-25deg);
+    height: 25px;
+    width: 15px;
+    border-right: 8px solid #333;
+    background-color: #fff;
+    content: "";
+}
+
+.box p {
+    line-height: 1.5;
+}
